@@ -28,7 +28,7 @@ A React TypeScript application for drawing and measuring rectangles on a canvas,
 
 1. Clone the repository:
 ```bash
-git clone (https://github.com/akinyeleolat/measurement_dashboard.git )
+git clone [https://github.com/akinyeleolat/measurement_dashboard.git](https://github.com/akinyeleolat/measurement_dashboard.git)
 cd measurement-dashboard
 ```
 
@@ -61,14 +61,24 @@ yarn build
 
 The build artifacts will be stored in the `build/` directory.
 
+## Deployment
+
+The application is available at [https://measurement-dashboard.vercel.app/](https://measurement-dashboard.vercel.app/).
+
 ## Project Structure
 
 ```
 src/
 ├── components/
-│   ├── CanvasMeasurement.tsx   # Main canvas component
-│   ├── DimensionsDisplay.tsx   # Rectangle dimensions display
-│   └── RecordsTable.tsx        # History table component
+│   ├── CanvasMeasurement.tsx    # Main canvas component
+|   ├── DimensionsDisplay.tsx    # Rectangle dimensions display
+│   ├── RecordsTable.tsx         # Rectangle dimensions display
+│   └── layout/
+│       └── DashboardLayout.tsx  # Dashboard layout display
+├── containers/
+│   └── MeasurementContainer.tsx  # Measurement container
+├── hooks/
+│   └── useRecords.ts             # Hooks for managing records
 ├── handlers/
 │   └── canvasHandlers.ts       # Event handlers for canvas
 ├── utils/
