@@ -28,7 +28,7 @@ A React TypeScript application for drawing and measuring rectangles on a canvas,
 
 1. Clone the repository:
 ```bash
-git clone [repository-url]
+git clone (https://github.com/akinyeleolat/measurement_dashboard.git )
 cd measurement-dashboard
 ```
 
